@@ -1,5 +1,5 @@
 {
-python_snip : [
+"python_snip": [
   """from pydantic import BaseModel, Field, create_model
 from typing import Dict, List, Union, Tuple
 
@@ -22,7 +22,7 @@ from django.dispatch import receiver
 User = get_user_model()
 
 class UserProfile(models.Model):
-    """Model For Extending Default Django User Model"""
+    \"\"\"Model For Extending Default Django User Model\"\"\"
     user = models.OneToOneField(User, 
                                 on_delete=models.CASCADE, 
                                 related_name='profile')
