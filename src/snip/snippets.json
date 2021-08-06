@@ -154,7 +154,7 @@ string = \"Hello!\"
 print(string * n)""", """from os import path
 
 def check_for_file():
-    print(\"Does file exist:\", path.exists("data.csv"))
+    print(\"Does file exist:\", path.exists(\"data.csv\"))
 
 if __name__==\"__main__\":
     check_for_file()""", """my_list = ['banana', 'apple', 'orange', 'pineapple']
@@ -169,7 +169,7 @@ last_element = my_list[-1]
 last_element = my_list.pop()""", """def get_vowels(string):
     return [vowel for vowel in string if vowel in \'aeiou\'] 
 
-print("\Vowels are:\", get_vowels('This is some random string'))""", """import time
+print(\"Vowels are:\", get_vowels('This is some random string'))""", """import time
 
 start_time = time.time()
 
