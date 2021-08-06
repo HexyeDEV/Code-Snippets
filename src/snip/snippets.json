@@ -167,7 +167,7 @@ last_element = my_list[-1]
 
 #Using pop method
 last_element = my_list.pop()""", """def get_vowels(string):
-    return [vowel for vowel in string if vowel in \'aeiou\'] 
+    return [vowel for vowel in string if vowel in 'aeiou'] 
 
 print(\"Vowels are:\", get_vowels('This is some random string'))""", """import time
 
