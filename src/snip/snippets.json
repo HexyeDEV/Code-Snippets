@@ -85,28 +85,28 @@ def main():
 
 @main.command()
 @click.option(
-    "--clientid",
-    "-ci",
-    "client_id",
+    \"--clientid\",
+    \"-ci\",
+    \"client_id\",
     required=True,
     type=str,
-    envvar="SPOTIFY_CLIENT_ID",
+    envvar=\"SPOTIFY_CLIENT_ID\",
 )
 @click.option(
-    "--clientsecret",
-    "-cs",
-    "client_secret",
+    \"--clientsecret\",
+   \"-cs\",
+    \"client_secret\",
     required=True,
     type=str,
-    envvar="SPOTIFY_CLIENT_SECRET",
+    envvar=\"SPOTIFY_CLIENT_SECRET\",
 )
 @click.option(
-    "--redirecturl",
-    "-rd",
-    "redirect_uri",
+   \"--redirecturl\",
+    \"-rd\",
+   \"redirect_uri\",
     required=True,
     type=str,
-    envvar="SPOTIFY_REDIRECT_URI",
+    envvar=\"SPOTIFY_REDIRECT_URI\",
 )
 @click.pass_context
 def connect(ctx, client_id, client_secret, redirect_uri):
@@ -119,9 +119,9 @@ def connect(ctx, client_id, client_secret, redirect_uri):
                 open_browser=False,
             )
         )
-        click.secho("API authorization successful!", fg="green")
+        click.secho(\"API authorization successful!\", fg=\"green\")
     except:
-        click.secho("API authorization failed!", fg="red")
+        click.secho(\"API authorization failed!\", fg=\"red\")
 
 
 @main.command()
