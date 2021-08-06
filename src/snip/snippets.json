@@ -138,14 +138,14 @@ def play_random_saved_album(sp_auth):
 
 client = discord.Client()
 
-@client.event async def on_ready(): print("Bot is ready!")
+@client.event async def on_ready(): print(\"Bot is ready!\")
 
-client.run(os.environ['DISCORD_BOT_TOKEN'])""", """dictionary1 = {"name": "Joy", "age": 25}
-dictionary2 = {"name": "Joy", "city": "New York"}
+client.run(os.environ[\'DISCORD_BOT_TOKEN\'])""", """dictionary1 = {\"name\": \"Joy\", \"age\": 25}
+dictionary2 = {\"name\": \"Joy\", \"city\": \"New York\"}
 
 merged_dict = {**dictionary1, **dictionary2}
 
-print("Merged dictionary:", merged_dict)""", """a = 5
+print(\"Merged dictionary:\", merged_dict)""", """a = 5
 
 print(2 < a < 8)
 print(1 == a < 3)""", """n = 5
@@ -154,7 +154,7 @@ string = "Hello!"
 print(string * n)""", """from os import path
 
 def check_for_file():
-    print("Does file exist:", path.exists("data.csv"))
+    print(\"Does file exist:\", path.exists("data.csv"))
 
 if __name__=="__main__":
     check_for_file()""", """my_list = ['banana', 'apple', 'orange', 'pineapple']
@@ -167,28 +167,28 @@ last_element = my_list[-1]
 
 #Using pop method
 last_element = my_list.pop()""", """def get_vowels(string):
-    return [vowel for vowel in string if vowel in 'aeiou'] 
+    return [vowel for vowel in string if vowel in \'aeiou\'] 
 
-print("Vowels are:", get_vowels('This is some random string'))""", """import time
+print("\Vowels are:\", get_vowels(\'This is some random string\'))""", """import time
 
 start_time = time.time()
 
 total = 0
 for i in range(10):
   total += i
-print("Sum:", total)
+print(\"Sum:\", total)
 
 end_time = time.time()
 time_taken = end_time - start_time
-print("Time: ", time_taken)""", """def most_frequent(list):
+print(\"Time: \", time_taken)""", """def most_frequent(list):
   return max(set(list), key=list.count)
 
 mylist = [1,1,2,3,4,5,6,6,2,2]
-print("most frequent item is:", most_frequent(mylist))""", """def list_to_dictionary(keys, values):
+print(\"most frequent item is:\", most_frequent(mylist))""", """def list_to_dictionary(keys, values):
   return dict(zip(keys, values))
 
 list1 = [1, 2, 3]
-list2 = ['one', 'two', 'three']
+list2 = [\'one\', \'two\', \'three\']
 
 print(list_to_dictionary(list1, list2))""", """
 a, b = 1,0
@@ -196,8 +196,8 @@ a, b = 1,0
 try:
     print(a/b)
 except ZeroDivisionError:
-    print("Can not divide by zero")
+    print(\"Can not divide by zero\")
 finally:
-    print("Executing finally block")"""
+    print(\"Executing finally block\")"""
   ]
 }
