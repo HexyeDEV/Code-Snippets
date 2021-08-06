@@ -1,1 +1,19 @@
-{}
+{
+python_snip = [
+  """from pydantic import BaseModel, Field, create_model
+from typing import Dict, List, Union, Tuple
+
+class NewPublishPOST(BaseModel):
+    rand_user   : str
+    rand_pass   : str
+    car_option  : str
+    body_type   : str
+    car_make    : str
+    car_model   : str
+    car_year    : int
+    car_trim    : str
+
+    class Config:
+        orm_mode = True"""
+  ]
+}
