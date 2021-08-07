@@ -12,6 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/HexyeDEV/Code-Snippeys",
+    download_url="https://github.com/HexyeDEV/Code-Snippets/releases/tag/0.0.1#:~:text=Source%20code,(zip)",
     project_urls={
         "Bug Tracker": "https://github.com/HexyeDEV/Code-Snippets/issues",
     },
