@@ -5,14 +5,14 @@ with open("../README.md", "r") as fh:
 
 setuptools.setup(
     name="Code-Snippets-Hexye",
-    version="0.0.2",
+    version="0.0.3",
     author="Hexye",
     author_email="dragonsale22@gmail.com",
     description="An api wrapper to return random code snippets",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/HexyeDEV/Code-Snippeys",
-    download_url="https://github.com/HexyeDEV/Code-Snippets/releases/tag/0.0.1#:~:text=Source%20code,(zip)",
+    url="https://github.com/HexyeDEV/Code-Snippets",
+    download_url="https://github.com/HexyeDEV/Code-Snippets/releases",
     project_urls={
         "Bug Tracker": "https://github.com/HexyeDEV/Code-Snippets/issues",
     },
