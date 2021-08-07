@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r", encoding="utf-8") as fh:
+with open("../README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Code-Snippets",
-    version="0.0.1",
+    name="Code-Snippets-Hexye",
+    version="0.0.2",
     author="Hexye",
     author_email="dragonsale22@gmail.com",
     description="An api wrapper to return random code snippets",
