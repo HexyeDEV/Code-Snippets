@@ -199,5 +199,53 @@ except ZeroDivisionError:
     print(\"Can not divide by zero\")
 finally:
     print(\"Executing finally block\")"""
-  ]
+  ], "php_snip": [
+        """<?php 
+  
+function startsWith($string, $startString) { 
+  $len = strlen($startString); 
+  return (substr($string, 0, $len) === $startString); 
+} 
+
+// usage
+echo startsWith(\"cat\", \"c\"); // true
+echo startsWith(\"dog\", \"x\"); // false
+
+?> """, """        // Closes directory
+        closedir($myDirectory);
+        
+        // Counts elements in array
+        $indexCount=count($dirArray);
+        
+        // Sorts files
+        sort($dirArray);""", """$name=$dirArray[$index];
+          $namehref=$dirArray[$index];
+          
+          // Gets Extensions 
+          $extn=findexts($dirArray[$index]); 
+          
+          // Gets file size 
+          $size=number_format(filesize($dirArray[$index]));
+          
+          // Gets Date Modified Data
+          $modtime=date("M j Y g:i A", filemtime($dirArray[$index]));
+          $timekey=date("YmdHis", filemtime($dirArray[$index]));
+          
+          // Prettifies File Types, add more to suit your needs.
+          switch ($extn){
+            case \"png\": $extn=\"PNG Image\"; break;
+            case \"jpg\": $extn=\"JPEG Image\"; break;
+            case \"svg\": $extn=\"SVG Image\"; break;
+            case \"gif\": $extn=\"GIF Image\"; break;
+            case \"ico\": $extn=\"Windows Icon\"; break;""", """function getUrl() {
+  $url  = @( $_SERVER[\"HTTPS\"] != 'on' ) ? 'http://'.$_SERVER[\"SERVER_NAME\"] :  'https://'.$_SERVER[\"SERVER_NAME\"];
+  $url .= ( $_SERVER[\"SERVER_PORT\"] !== 80 ) ? \":\".$_SERVER[\"SERVER_PORT\"] : \"\";
+  $url .= $_SERVER[\"REQUEST_URI\"];
+  return $url;""", """function data_uri($file, $mime) {
+  $contents=file_get_contents($file);
+  $base64=base64_encode($contents);
+  echo \"data:$mime;base64,$base64\";"""
+}
+}         
+      ]
 }
