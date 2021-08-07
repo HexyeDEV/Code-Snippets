@@ -228,8 +228,8 @@ echo startsWith(\"dog\", \"x\"); // false
           $size=number_format(filesize($dirArray[$index]));
           
           // Gets Date Modified Data
-          $modtime=date("M j Y g:i A", filemtime($dirArray[$index]));
-          $timekey=date("YmdHis", filemtime($dirArray[$index]));
+          $modtime=date(\"M j Y g:i A\", filemtime($dirArray[$index]));
+          $timekey=date(\"YmdHis\", filemtime($dirArray[$index]));
           
           // Prettifies File Types, add more to suit your needs.
           switch ($extn){
@@ -245,7 +245,5 @@ echo startsWith(\"dog\", \"x\"); // false
   $contents=file_get_contents($file);
   $base64=base64_encode($contents);
   echo \"data:$mime;base64,$base64\";"""
-}
-}         
       ]
 }
