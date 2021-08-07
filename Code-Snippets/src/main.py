@@ -8,3 +8,7 @@ def python_snippet():
 def php_snippet():
   snippets = json.load(open("snip/snippets.json"))
   return random.choice(snippets["php_snip"])
+
+def java_snippet():
+  snippets = json.load(open("snip/snippets.json"))
+  return random.choice(snippets["java_snip"])
